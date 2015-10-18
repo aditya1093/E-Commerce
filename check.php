@@ -1,0 +1,33 @@
+<?php
+  include('lib/connect.php');
+  $obj=new connect();
+  $id=$_POST['uid'];
+  $pwd=$_POST['pwd'];
+  $pwd1=md5($pwd);
+  $res=$obj->validate($id,$pwd1);
+  $n=mysql_num_rows($res);
+  if($n)
+  {
+	$arr=mysql_fetch_row($res);
+	session_start();
+	$sid=$_SESSION['sid'];
+	$_SESSION['name']=$arr[0];
+	$_SESSION['uid']=$id;
+	$obj->push_cart();
+	if(isset($_POST['payment']))
+	  header('Location:pay.php');
+	else
+	{	
+	  $no=$obj->getcount();
+	  if($no)
+		header('Location:cart.php');
+	  else
+		header('Location:index.php');
+	}
+  }
+  else
+  {
+	$msg=md5('failed');
+	header('Location:login.php?error='.$msg);
+  }
+?>
