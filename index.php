@@ -45,7 +45,7 @@
 <div id="wrapper">
   <div id="inner">
     <div id="header">
-      <h1><img src="images/logo.gif" width="519" height="63" alt="Online Shopping Store" /></h1>
+      <h1><img src="images/logo.gif" width="744" height="63" alt="Online Shopping Store" /></h1>
       <div id="nav"> 
         <p><a href="cart.php">View Cart(<?php echo $count; ?>)</a> | <a href="register.php">Register</a> |  
 	  	<?php

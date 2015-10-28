@@ -44,7 +44,7 @@
 <div id="wrapper">
   <div id="inner">
     <div id="header">
-      <h1><img src="images/logo.gif" width="519" height="63" alt="Online Movie Store" /></h1>
+      <h1><img src="images/logo.gif" width="744" height="63" alt="Online Movie Store" /></h1>
       <div id="nav"> <a href="#">View cart(<?php echo $count; ?>)</a> | <a href="register.php">Register </a>| 
 	   	<?php
 	  	  if(isset($_SESSION['uid']))
