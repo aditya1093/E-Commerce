@@ -44,13 +44,13 @@ body{
 	<form id="form1" name="form1" method="post" action="save.php">
 	  <table align="center" cellpadding="10" cellspacing="0" rules="none" bgcolor="#fff">
 		<tr>
-		  <td colspan="4" nowrap="nowrap" bgcolor="#0033FF"><div align="center" class="style3 style4 style5">REGISTER</div></td>
+		  <td colspan="4" bgcolor="#0033FF"><div align="center" class="style3 style4 style5">REGISTER</div></td>
 		</tr>
 		<tr>
-		  <td colspan="4" nowrap="nowrap" bgcolor="#CCFF33"><p class="margin"><span class="style6"> *</span> marked fields are mandatory</p></td>
+		  <td colspan="4" bgcolor="#CCFF33"><p class="margin"><span class="style6"> *</span> marked fields are mandatory</p></td>
 		</tr>
 		<tr>
-		  <td colspan="4" nowrap="nowrap" bgcolor="#FFFF00">Account details</td>
+		  <td colspan="4" bgcolor="#FFFF00">Account details</td>
 		</tr>
 		<tr>
 		  <td>User ID<span class="style6"> * </span></td>
@@ -65,7 +65,7 @@ body{
 		  <td colspan="3"><input name="pwd2" type="password" id="pwd2" size="20" onchange="confirm()"/><div id="cp" class="err"></div></td>
 		</tr>
 		<tr>
-		  <td colspan="4" nowrap="nowrap" bgcolor="#FFFF00">Contact details</td>
+		  <td colspan="4" bgcolor="#FFFF00">Contact details</td>
 		</tr>
 		<tr>
 		  <td>First Name <span class="style6"> *</span></td>
@@ -135,7 +135,7 @@ body{
 			<input name="tno" type="text" id="tno" size="10" maxlength="10" /></td>
 		</tr>
 		<tr>
-		  <td colspan="4" nowrap="nowrap" bgcolor="#FFFF00">Personal details</td>
+		  <td colspan="4" bgcolor="#FFFF00">Personal details</td>
 		</tr>
 		<tr>
 		  <td>email-id<span class="style6"> *</span> </td>

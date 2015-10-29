@@ -30,14 +30,14 @@ Description: A two-column fixed-width template suitable for small websites.
 <body>
 <div id="wrapper">
 	<div id="header">
-		<div id="logo">
+		<!--<div id="logo">
 			<h1><a href="#">User Login</a></h1>
-		</div>
+		</div>-->
 		<!-- end div#logo -->
 		<div id="menu">
 			<ul>
 				<li><a href="index.php">Home</a></li>
-				<li><a href="cart.php">View Cart</a></li>
+				<li><a href="register.php">Register</a></li>
 			</ul>
 		</div>
 		<!-- end div#menu -->
@@ -48,16 +48,13 @@ Description: A two-column fixed-width template suitable for small websites.
 			<div id="welcome">
 			</div>
 			<form name="form1" id="form1" method="post" action="check.php">
-			  <table width="386" border="0">
+			  <table>
                 <tr>
-                  <td width="144">User name </td>
-                  <td width="226">
+                  <td>Username </td>
+                  <td>
 				  <label>
                     <input name="uid" type="text" id="uid" />
                   </label>				  </td>
-                </tr>
-                <tr>
-                  <td height="16" colspan="2">&nbsp;</td>
                 </tr>
                 <tr>
                   <td>Password</td>
@@ -71,22 +68,19 @@ Description: A two-column fixed-width template suitable for small websites.
 				<?php
 				  }
 				?>
-                <tr>
-                  <td height="26" colspan="2">&nbsp;</td>
-                </tr>
                 
 				<?php	
 				  if(isset($_GET['error']))
 				  {
 				?>
                 <tr>
-                  <td height="29" colspan="2"><div align="center" class="style1">Wrong user id or password!</div></td>
+                  <td colspan="2"><div align="center" class="style1">Wrong user id or password!</div></td>
                 </tr>
 				<?php
 				  }
 				?>
                 <tr>
-                  <td height="56" colspan="2">
+                  <td colspan="2">
 				  <label>
                     <div align="center">
                       <input type="submit" name="Submit" value="Submit" />
@@ -151,8 +145,6 @@ Description: A two-column fixed-width template suitable for small websites.
 	</div>
 	<!-- end div#page -->
 	<div id="footer">
-		<p id="legal">Copyright &copy; 2007 Imprimis. All Rights Reserved. Designed by <a href="#">The mobile store </a></p>
-		<p id="links"><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
 	</div>
 	<!-- end div#footer -->
 </div>
